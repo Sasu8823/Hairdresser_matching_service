@@ -1,13 +1,15 @@
 // E:\Hairdresser_matching_service\frontend\js\main.js
 console.log('main.js loaded');
-const messageBtn = document.querySelector('.btn-red');
-if (messageBtn) {
+document.addEventListener('DOMContentLoaded', () => {
+  const messageBtn = document.querySelector('.btn-red');
+  if (messageBtn) {
     messageBtn.addEventListener('click', () => {
-        console.log('Message button clicked');
-        
-        window.location.href = '/customer';
+      console.log('Message button clicked');
+      window.location.href = '/customer';
     });
-}
+  }
+});
+
 
 const apiUrl = import.meta.env.VITE_API_URL; // or set manually if needed
 
