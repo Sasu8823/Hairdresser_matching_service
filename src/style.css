@@ -1,4 +1,9 @@
-/* style.css */
+/* Import global styles */
+
+@import './assets/styles/global.css';
+
+/* Additional custom styles */
+
 .home-container {
     padding: 1rem;
     background: #fff;

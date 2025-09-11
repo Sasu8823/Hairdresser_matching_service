@@ -1,0 +1,406 @@
+/* Component-specific styles for better alignment */
+
+
+/* Request List Specific Styles */
+
+.request-content h3 {
+    color: #1DB446;
+    margin-bottom: 15px;
+    font-size: 1.3rem;
+}
+
+.request-details {
+    margin-bottom: 15px;
+}
+
+.request-details p {
+    margin-bottom: 8px;
+    color: #666;
+}
+
+.request-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 15px;
+    border-top: 1px solid #e9ecef;
+}
+
+.commission-info {
+    font-size: 0.9rem;
+    color: #666;
+}
+
+
+/* Offer Form Specific Styles */
+
+.offer-form-section {
+    margin-top: 20px;
+    padding-top: 20px;
+    border-top: 2px solid #f8f9fa;
+}
+
+.offer-btn {
+    background-color: #17a2b8;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: 600;
+    margin-bottom: 20px;
+    width: auto;
+    margin-top: 0;
+}
+
+.offer-btn:hover {
+    background-color: #138496;
+}
+
+
+/* Matching List Specific Styles */
+
+.matching-content h3 {
+    color: #1DB446;
+    margin-bottom: 15px;
+    font-size: 1.3rem;
+}
+
+.participants {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    margin-bottom: 20px;
+}
+
+@media (max-width: 768px) {
+    .participants {
+        grid-template-columns: 1fr;
+    }
+}
+
+.participant h4 {
+    color: #1DB446;
+    margin-bottom: 5px;
+    font-size: 1rem;
+}
+
+.participant p {
+    color: #666;
+    font-size: 0.9rem;
+}
+
+.matching-details {
+    background-color: #f8f9fa;
+    padding: 15px;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+
+.matching-details p {
+    margin-bottom: 8px;
+    color: #495057;
+}
+
+.commission-info {
+    background-color: #e3f2fd;
+    padding: 15px;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+
+.commission-info p {
+    margin-bottom: 5px;
+    color: #1976d2;
+    font-weight: 500;
+}
+
+.matching-actions {
+    text-align: center;
+    padding-top: 15px;
+    border-top: 1px solid #e9ecef;
+}
+
+.confirmed-status {
+    background-color: #d4edda;
+    padding: 15px;
+    border-radius: 10px;
+    color: #155724;
+}
+
+.confirmed-status p {
+    margin-bottom: 5px;
+    font-weight: 500;
+}
+
+
+/* Chat Modal Styles */
+
+.chat-modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+    padding: 20px;
+}
+
+.chat-modal-content {
+    background: white;
+    border-radius: 15px;
+    width: 100%;
+    max-width: 500px;
+    height: 600px;
+    overflow: hidden;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.3);
+}
+
+
+/* No Messages Styles */
+
+.no-messages {
+    text-align: center;
+    padding: 40px 20px;
+    color: #666;
+}
+
+.no-messages p {
+    margin-bottom: 10px;
+}
+
+
+/* Admin Dashboard Specific Styles */
+
+.dashboard-content {
+    background: white;
+    border-radius: 15px;
+    padding: 30px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+.revenue-stats,
+.rank-stats {
+    margin-top: 30px;
+    padding-top: 30px;
+    border-top: 2px solid #f8f9fa;
+}
+
+.revenue-stats h3,
+.rank-stats h3 {
+    color: #1DB446;
+    margin-bottom: 20px;
+    font-size: 1.5rem;
+}
+
+.revenue-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+.revenue-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+    background-color: #f8f9fa;
+    border-radius: 10px;
+    font-weight: 500;
+}
+
+.rank-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 15px;
+}
+
+.rank-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+    background-color: #f8f9fa;
+    border-radius: 10px;
+    font-weight: 500;
+}
+
+.rank-name {
+    color: #1DB446;
+    font-weight: 600;
+}
+
+.rank-count {
+    color: #666;
+}
+
+
+/* Table Enhancements */
+
+.user-info {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.payment-status {
+    padding: 4px 8px;
+    border-radius: 12px;
+    font-size: 0.8rem;
+    font-weight: bold;
+}
+
+.payment-status.paid {
+    background-color: #d4edda;
+    color: #155724;
+}
+
+.payment-status.unpaid {
+    background-color: #f8d7da;
+    color: #721c24;
+}
+
+
+/* Form Enhancements */
+
+.form-group textarea {
+    resize: vertical;
+    min-height: 100px;
+}
+
+.form-group input[type="number"] {
+    text-align: right;
+}
+
+
+/* Button Group Styles */
+
+.action-buttons {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.action-buttons .btn-primary {
+    width: auto;
+    min-width: 150px;
+}
+
+
+/* Loading States */
+
+.loading-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(255, 255, 255, 0.8);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 100;
+}
+
+
+/* Error States */
+
+.error-message {
+    background-color: #f8d7da;
+    color: #721c24;
+    padding: 15px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    border: 1px solid #f5c6cb;
+}
+
+
+/* Success States */
+
+.success-message {
+    background-color: #d4edda;
+    color: #155724;
+    padding: 15px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    border: 1px solid #c3e6cb;
+}
+
+
+/* Responsive Enhancements */
+
+@media (max-width: 480px) {
+    .modal-content {
+        margin: 5px;
+        padding: 15px;
+    }
+    .chat-modal-content {
+        height: 100vh;
+        border-radius: 0;
+    }
+    .stats-grid {
+        grid-template-columns: 1fr;
+    }
+    .revenue-grid {
+        grid-template-columns: 1fr;
+    }
+    .rank-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+
+/* Animation Enhancements */
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.request-card,
+.matching-card,
+.offer-card {
+    animation: fadeIn 0.3s ease-out;
+}
+
+
+/* Focus States */
+
+.tab-btn:focus,
+.submit-btn:focus,
+.accept-offer-btn:focus,
+.payment-btn:focus,
+.confirm-btn:focus,
+.chat-btn:focus,
+.btn-primary:focus {
+    outline: 2px solid #1DB446;
+    outline-offset: 2px;
+}
+
+
+/* Print Styles */
+
+@media print {
+    .tab-navigation,
+    .matching-actions,
+    .action-buttons {
+        display: none;
+    }
+    .request-card,
+    .matching-card {
+        break-inside: avoid;
+        box-shadow: none;
+        border: 1px solid #ddd;
+    }
+}

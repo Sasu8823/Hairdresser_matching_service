@@ -2,7 +2,7 @@
 import liff from "@line/liff";
 
 const LIFF_ID =
-    import.meta.env.VITE_LIFF_ID || "2007683839-YM9j8eej";
+    import.meta.env.VITE_LIFF_ID;
 
 export async function initLiff() {
     try {
