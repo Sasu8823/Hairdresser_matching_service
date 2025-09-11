@@ -1,0 +1,95 @@
+/* global.css */
+
+/* 1. Reset & Normalize */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* 2. Base font settings */
+html {
+    font-size: 16px;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+    background-color: #f8f9fa;
+    color: #212529;
+    line-height: 1.5;
+    min-height: 100vh;
+}
+
+/* 3. Links */
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* 4. Buttons */
+button {
+    cursor: pointer;
+    border: none;
+    outline: none;
+    background: #007aff;
+    color: white;
+    padding: 0.5rem 1rem;
+    border-radius: 8px;
+    font-size: 1rem;
+    transition: background 0.2s;
+}
+
+button:hover {
+    background: #005fcb;
+}
+
+/* 5. Inputs */
+input, textarea, select {
+    font-family: inherit;
+    font-size: 1rem;
+    padding: 0.5rem;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    outline: none;
+    transition: border-color 0.2s;
+}
+
+input:focus, textarea:focus, select:focus {
+    border-color: #007aff;
+}
+
+/* 6. Utility spacing */
+.mt-1 { margin-top: 0.25rem; }
+.mt-2 { margin-top: 0.5rem; }
+.mt-3 { margin-top: 1rem; }
+.mt-4 { margin-top: 1.5rem; }
+
+.mb-1 { margin-bottom: 0.25rem; }
+.mb-2 { margin-bottom: 0.5rem; }
+.mb-3 { margin-bottom: 1rem; }
+.mb-4 { margin-bottom: 1.5rem; }
+
+.p-1 { padding: 0.25rem; }
+.p-2 { padding: 0.5rem; }
+.p-3 { padding: 1rem; }
+.p-4 { padding: 1.5rem; }
+
+/* 7. Containers */
+.container {
+    width: 100%;
+    max-width: 720px;
+    margin: 0 auto;
+    padding: 1rem;
+}
+
+/* 8. Text utilities */
+.text-center { text-align: center; }
+.text-right { text-align: right; }
+.text-bold { font-weight: bold; }
+.text-muted { color: #6c757d; }

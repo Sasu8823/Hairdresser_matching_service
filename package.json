@@ -1,0 +1,20 @@
+{
+  "name": "hairdresser-matching-frontend",
+  "version": "1.0.0",
+  "description": "Frontend for Hairdresser Matching Service (LINE Mini App + LIFF) built with React and Vite",
+  "scripts": {
+    "dev": "vite --host",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "@line/liff": "^2.27.0",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-react": "^4.3.1",
+    "vite": "^7.0.1"
+  },
+  "type": "module"
+}
